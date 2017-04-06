@@ -1,4 +1,9 @@
-function HomeController() {
+function HomeController($scope, $http, SpotifySearchSong) {
+
+
+  SpotifySearchSong.searchSong(song).then(function(response) {
+    $scope.song = response
+  });
 
 }
 
