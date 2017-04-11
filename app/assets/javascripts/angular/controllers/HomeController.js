@@ -1,10 +1,13 @@
-function HomeController($scope, $http, SpotifySearchSong) {
+function HomeController($scope, $http, SpotifySearchSong, $sce) {
 
 
-  SpotifySearchSong.searchSong(song).then(function(response) {
-    $scope.song = response
-  });
-
+  $scope.searchSong = function(song) {
+    SpotifySearchSong
+      .searchASong(song)
+      .then(function(response) {
+        $scope.songs = response
+      });
+  }
 }
 
 angular

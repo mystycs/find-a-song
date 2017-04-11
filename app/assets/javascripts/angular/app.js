@@ -12,4 +12,9 @@ angular
       })
 
     $urlRouterProvider.otherwise('/');
+  })
+  .filter('trustUrl', function ($sce) {
+    return function(url) {
+      return $sce.trustAsResourceUrl(url);
+    };
   });

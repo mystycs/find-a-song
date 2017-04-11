@@ -1,3 +1,15 @@
 <div class="jumbotron text-center">
-    Hello!
+  <div ng-controller="HomeController">
+
+    <input type="text" class="form-control" ng-change="searchSong(song)" ng-model-options="{ debounce: 400 }" type="text" title="required input" ng-model="song" placeholder="Enter a song" />
+    <div ng-repeat="song in songs">
+      <div class="items" ng-repeat="items in song">
+        <div class="album" ng-repeat="album in items">
+          <iframe ng-src="{{'https://embed.spotify.com/?uri=' + album.uri | trustUrl}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>"
+        </div>
+      </div>
+      <!-- {{song.items[0].album.artists[0].uri}} -->
+    </div>
+
+  </div>
 </div>
