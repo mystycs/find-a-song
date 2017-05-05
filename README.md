@@ -1,15 +1,15 @@
-#Find a Song
+# Find a Song
 
 AngularJS App to look up songs on spotify 
 
-##Installation
+## Installation
 
    ```
    $ git git@github.com:mystycs/find-a-song.git
    $ cd find-a-song
    ```
 
-##Usage
+## Usage
 
 Enter the following commands below
 
@@ -26,10 +26,10 @@ Next, type the command below and launch the server localhost:3000
 After opening localhost:3000 in your browser, you can use this app!!
 
 
-##Contributing
+## Contributing
 
 All and any kinds of contributions are always welcome!
 
-##License
+## License
 
 MIT. See [LICENSE.md](https://github.com/mystycs/find-a-song/blob/master/LICENSE) for details.
